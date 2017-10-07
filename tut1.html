@@ -1,0 +1,23 @@
+<html>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>1st lecture</title>
+ </head>
+ <body>
+ 	<input type="text" id="toDoBox"><button id="btn">Add</button>
+ 	<ul id="toDolist">
+ 		<li>1st task</li>
+ 	</ul>
+ 	<script>
+ 		let box = document.getElementById('toDoBox');
+ 		let list = document.getElementById('toDolist');
+ 		let btn = document.getElementById('btn');
+ 		btn.onclick = function () {
+ 			let todo = box.value;
+ 			let newtask = document.createElement('li');
+ 			newtask.innerText += todo;
+ 			list.appendChild(newtask);
+ 		} 
+ 	</script>
+ </body>
+</html> 
