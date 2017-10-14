@@ -1,0 +1,72 @@
+body {
+	font-family: Georgia;
+	/*background-image: url(background.jpg);*/
+
+	margin: 0px;
+	margin-bottom: 8px;
+
+}
+#profilePic{
+	padding-top: 15px;
+	padding-left: 50px;	
+	height: 100px;
+	width: 100px;
+	border-radius: 4px;
+	float: left;
+}
+
+div {	
+	border: 2px solid;	
+	margin: 5px;
+	padding-left: 10px; 
+}
+.header {
+	background-color: #041d47 ;	
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	color: white;	
+}
+
+.body {
+	background-color: #dce6f7;
+	border-radius: 5px;
+	margin:20px;
+}
+
+.footer {
+	background-color: #041d47;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align:center;
+	color: white; 
+}
+
+h4 {
+	margin-left: 15px;
+	padding: 2px;
+}
+
+.contact {
+
+	margin-top: 5px;
+	height: 30px;
+	width: 30px;
+
+}
+
+.whiteBack{
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	text-align: left;
+	border-left-style: solid;
+	border-left-width: 3px; 
+	border-left-color: blue;
+	padding: 20px;
+	margin: 20px;
+}
+
+td {	
+	float: center; 
+}
