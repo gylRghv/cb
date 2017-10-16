@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amission Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="admission.css">
+	<script>
+		function show(){
+			var kvpairs = [];
+			var form = document.getElementById("myForm");// get the form somehow
+			for ( var i = 0; i < form.elements.length; i++ ) {
+			   var e = form.elements[i];
+			   kvpairs.push(encodeURIComponent(e.id) + "=" + encodeURIComponent(e.value));
+			}
+			var queryString = kvpairs.join("&");
+			var res = queryString.split("&").join("<br />");
+			/*alert(queryString);*/
+			var info = document.getElementById("information");
+			info.style.display = "block";
+			info.innerHTML = "<h3>Your details are:</h3>" + res;
+							
+		}			
+	</script>
+</head>
+<body>
+	<div id="header">
+		<img src="admission.jpg" style="height: 45px; width: 45px; margin-top: 15px;"> <h2 style="display:block;vertical-align: middle;">XYZ COACHING INSTITUTE</h2><br>
+		<span style="font-size: 20px; margin: auto 5px ;">REGISTER NOW</span>		
+	</div>
+	<div id="xyz" style="width: 84%;">
+		<h3>Please provide with Profile Details:</h3>
+		<hr>		
+		<form id="myForm" action="#" method="post">
+			<table>		
+				<tr >			
+					<td class="td1">Name:</td><td><input type="text" id="name" /></td>
+					
+					<td class="td1">Email:</td><td><input type="email" id="email" /></td>
+				</tr>
+				<tr>
+					<td class="td1">Password:</td><td><input type="password" id="password" /></td>
+				
+					<td class="td1">Confirm Password:</td><td><input type="password" id="confirm" /></td>			
+				</tr>
+				<tr>
+					<td class="td1">Contact:</td><td><input type="text" id="contact" /></td>			
+				
+					<td class="td1">Date of Birth:</td><td><input type="date" id="dob" />			
+				</tr>
+				<tr>
+					<td class="td1">College:</td><td><input type="text" id="college" /></td>	
+
+					<td class="td1">Year of Passing:</td><td><input type="text" id="year" /></td>			
+				</tr>
+				<tr>
+					<td class="td1">Branch:</td><td><input type="text" id="branch" /></td>	
+				</tr>
+			</table>			
+		</form>
+		<input type="submit" value="SUBMIT" onclick="show();" style="margin-left: 45%" />	
+	</div>
+	<div id="information">
+				
+	</div>
+
+	
+</body>
+</html>
